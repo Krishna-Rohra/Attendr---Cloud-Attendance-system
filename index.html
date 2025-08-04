@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendr - Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #364958ff 0%, #3b6064ff 30%, #55828bff 55%, #87bba2ff 80%, #c9e4caff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        .redirect-container {
+            text-align: center;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="loader"></div>
+        <h2>Welcome to Attendr</h2>
+        <p>Redirecting to the home page...</p>
+    </div>
+    
+    <script>
+        // Redirect to startup.html after a brief delay
+        setTimeout(() => {
+            window.location.href = 'startup.html';
+        }, 2500);
+    </script>
+</body>
+</html>
