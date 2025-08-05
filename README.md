@@ -208,8 +208,8 @@ This project is open source and available under the MIT License.
 
 For technical support or questions, please refer to the documentation or create an issue in the project repository. 
 
-## Team Member's
+## Team Members
 
 - Krishna Rohra
 - Venkatesh Soma
-- Prawjal Sanade
+- Prajwal Sanade
